@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App with Customization</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="section-container">
+        <div class="customize-container">
+          <h2>Customize Page</h2>
+          <label for="background-color">Background Color:</label>
+          <select id="background-color">
+            <option value="white">White</option>
+            <option value="lightgray">Light Gray</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="lightgreen">Light Green</option>
+            <option value="pink">Pink</option>
+            <option value="gold">Gold</option>
+          </select>
+
+          <label for="font-size">Font Size:</label>
+          <input type="range" id="font-size" min="12" max="40" value="16" />
+
+          <button id="dark-mode-toggle">Dark Mode</button>
+
+          <label for="font-style">Font Style:</label>
+          <select id="font-style">
+            <option value="Arial, sans-serif">Sans-Serif (Arial)</option>
+            <option value="Times New Roman, serif">
+              Serif (Times New Roman)
+            </option>
+          </select>
+        </div>
+
+        <div class="todo-container">
+          <h2>My To-Do List</h2>
+          <input type="text" id="newTask" placeholder="Add a new task..." />
+          <button id="addButton" class="add-button">Add</button>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="taskList"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
